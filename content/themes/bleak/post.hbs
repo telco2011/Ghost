@@ -15,39 +15,43 @@
 				<div class="clear"></div>
 				<h1 class="post-title">{{{title}}}</h1>
 			</header>
-		
+
 			<section class="post-content">
 				{{content}}
 			</section>
-			
+
 			<footer class="post-footer">
 				<div>
-					<div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
-	              {{#if author.image}}
-	                <a href="{{author.website}}" class="post-author-avatar">
-	                  <img itemprop="image" src="{{author.image}}" alt="{{author.name}}">
-	                </a>
-	              {{/if}}
-	              <div class="post-author-info">
-	                <h4 class="post-footer-heading">Escrito por</h4>
-	                <a href="{{author.website}}" itemprop="url" class="post-author-name">
-	                  <span itemprop="name">{{author.name}}</span>
-	                </a>
-	                <p itemprop="description" class="post-author-bio">{{author.bio}}</p>
-	                {{#if author.location}}
-	                  <p class="post-author-location">{{author.location}}</p>
-	                {{/if}}
-	                {{#if author.website}}
-	                  <p class="post-author-website">
-	                    <a href="{{author.website}}" rel="nofollow">{{author.website}}</a>
-	                  </p>
-	                {{/if}}
-	                <p class="post-info">
-	                  <b class="post-info-title">Publicado en</b>
-	                  <time class="post-date">{{date format='MMMM DD, YYYY'}}</time>
-	                </p>
-	              </div>
-	            </div>
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+                        <div class="post-author-info">
+                            <div style="float: left;">
+                                <h4 class="post-footer-heading">Escrito por</h4>
+                                <a href="{{author.website}}" itemprop="url" class="post-author-name">
+                                    <span itemprop="name">{{author.name}}</span>
+                                </a>
+                                <p itemprop="description" class="post-author-bio">{{author.bio}}</p>
+                                {{#if author.location}}
+                                    <p class="post-author-location">{{author.location}}</p>
+                                {{/if}}
+                                {{#if author.website}}
+                                    <p class="post-author-website">
+                                        <a href="{{author.website}}" rel="nofollow">{{author.website}}</a>
+                                    </p>
+                                {{/if}}
+                                <p class="post-info">
+                                    <b class="post-info-title">Publicado en</b>
+                                    <time class="post-date">{{date format='MMMM DD, YYYY'}}</time>
+                                </p>
+                            </div>
+                            <div>
+                                {{#if author.image}}
+                                    <a href="{{author.website}}" class="post-author-avatar">
+                                        <img itemprop="image" src="{{author.image}}" alt="{{author.name}}">
+                                    </a>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
 				<div class="post-tags">
 					{{tags separator=" "}}
 				</div>
@@ -63,13 +67,13 @@
 					</a>
 				</div>
 			</footer>
-			
+
 			<aside class="post-comments">
 				<div id="disqus_thread"></div>
 			</aside>
-			
+
 			</div>
-			
+
 			<nav class="post-nav">
 				{{#next_post}}
 					<a class="post-nav-item post-nav-next" href="{{url absolute="true"}}">

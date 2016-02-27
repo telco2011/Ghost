@@ -45,8 +45,10 @@ Session.vim
 /core/server/data/export/exported*
 /content/tmp/*
 /content/data/*
+!/content/data/ghost-dev.db
 /content/apps/**/*
 /content/images/**/*
+!/content/images/2016/**/*
 /content/themes/casper
 !/README.md
 
