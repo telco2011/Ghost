@@ -41,8 +41,8 @@ module.exports = function(grunt) {
 	                src: '*',
                     cwd: 'src/fonts/',
                     expand: true
-                }]		        
-	        } 
+                }]
+	        }
         },
         clean: {
             dist: ['assets']
@@ -157,7 +157,6 @@ module.exports = function(grunt) {
         'cssmin:dev',
         'postcss',
         'copy:dev',
-        'uglify:dev',
-        'watch'
+        'uglify:dev'
     ]);
 };
