@@ -48,7 +48,6 @@ Session.vim
 !/content/data/ghost-dev.db
 /content/apps/**/*
 /content/images/**/*
-!/content/images/2016/**/*
 /content/themes/casper
 !/README.md
 
