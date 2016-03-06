@@ -26,9 +26,35 @@
                         <div class="post-author-info">
                             <div style="float: left;">
                                 <h4 class="post-footer-heading">Escrito por</h4>
-                                <a href="{{author.website}}" itemprop="url" class="post-author-name">
-                                    <span itemprop="name">{{author.name}}</span>
-                                </a>
+                                <div>
+                                    <div>
+                                        <a href="{{author.website}}" itemprop="url" class="post-author-name">
+                                            <span itemprop="name">{{author.name}}</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        {{#if author.twitter}}
+                                        <a class="icon-twitter" target="_blank" href="{{author.twitter}}">
+                                            <span>Twitter</span>
+                                        </a>
+                                        {{/if}}
+                                        {{#if author.facebook}}
+                                        <a class="icon-facebook" target="_blank" href="{{author.facebook}}">
+                                            <span>Facebook</span>
+                                        </a>
+                                        {{/if}}
+                                        {{#if author.gplus}}
+                                        <a class="icon-gplus" target="_blank" href="{{author.gplus}}">
+                                            <span>Google+</span>
+                                        </a>
+                                        {{/if}}
+                                        {{#if author.linkedin}}
+                                            <a class="icon-linkedin" target="_blank" href="{{author.linkedin}}">
+                                                <span>Linkedin</span>
+                                            </a>
+                                        {{/if}}
+                                    </div>
+                                </div>
                                 <p itemprop="description" class="post-author-bio">{{author.bio}}</p>
                                 {{#if author.location}}
                                     <p class="post-author-location">{{author.location}}</p>
@@ -57,15 +83,20 @@
 					{{tags separator=" "}}
 				</div>
 				<div class="post-share">
-					<a class="icon-twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-						<span>Twitter</span>
-					</a>
-					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-						<span>Facebook</span>
-					</a>
-					<a class="icon-gplus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-						<span>Google+</span>
-					</a>
+                    <div>
+                        <span>Compartelo: </span>
+                    </div>
+                    <div>
+                        <a class="icon-twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <span>Twitter</span>
+                        </a>
+                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                            <span>Facebook</span>
+                        </a>
+                        <a class="icon-gplus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                            <span>Google+</span>
+                        </a>
+                    </div>
 				</div>
 			</footer>
 
