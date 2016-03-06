@@ -27,7 +27,7 @@
 						{{else}}
 						<span class="name">{{@blog.title}}</span>
 						{{/if}}
-						
+
 					</a>
 				</div>
 				<div class="nav-menu">
@@ -36,7 +36,7 @@
 					<a class="menu" data-action="menu" data-target="menu"><i class="icon-menu"></i></a>
 					{{/if}}
 				</div>
-			</nav>			
+			</nav>
 			{{{body}}}
 			<div id="body-class" style="display: none;" class="{{body_class}}"></div>
 			<footer id="footer">
@@ -51,8 +51,11 @@
 		</div>
 	</section>
 	{{ghost_foot}}
-	
+
 	<script type="text/javascript" src="{{asset "js/dependencies.js"}}"></script>
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+
+    <script id="dsq-count-scr" src="http://quetecomo.disqus.com/count.js" async></script>
+
 </body>
 </html>

@@ -150,6 +150,29 @@
                     </p>
                 {{/gh-form-group}}
 
+                {{#gh-form-group errors=user.errors hasValidated=user.hasValidated property="website"}}
+                    <h3 for="user-social">
+                        Social
+                        <p>Configure your social accounts</p>
+                    </h3>
+                    <label for="user-twitter">Twitter</label>
+                    {{input type="url" value=user.twitter id="user-twitter" class="gh-input" autocapitalize="off" autocorrect="off" autocomplete="off" focusOut=(action "validate" "twitter")}}
+                    {{gh-error-message errors=user.errors property="twitter"}}
+                    <p>Add your twitter account.</p>
+                    <label for="user-facebook">Facebook</label>
+                    {{input type="url" value=user.facebook id="user-facebook" class="gh-input" autocapitalize="off" autocorrect="off" autocomplete="off" focusOut=(action "validate" "facebook")}}
+                    {{gh-error-message errors=user.errors property="facebook"}}
+                    <p>Add your facebook account.</p>
+                    <label for="user-gplus">Google+</label>
+                    {{input type="url" value=user.gplus id="user-gplus" class="gh-input" autocapitalize="off" autocorrect="off" autocomplete="off" focusOut=(action "validate" "gplus")}}
+                    {{gh-error-message errors=user.errors property="gplus"}}
+                    <p>Add your google plus account.</p>
+                    <label for="user-linkedin">Linkedin</label>
+                    {{input type="url" value=user.linkedin id="user-linkedin" class="gh-input" autocapitalize="off" autocorrect="off" autocomplete="off" focusOut=(action "validate" "linkedin")}}
+                    {{gh-error-message errors=user.errors property="linkedin"}}
+                    <p>Add your linkedin account.</p>
+                {{/gh-form-group}}
+
                 <hr />
 
             </fieldset>
