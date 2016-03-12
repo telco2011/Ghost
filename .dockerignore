@@ -1,0 +1,14 @@
+node_modules?
+test?
+.env_test
+.gitignore
+.dockerignore
+Dockerfile
+.editorconfig
+.jshintrc
+Procfile
+.github
+./content/themes/casper/**
+config.example.js
+.travis.yml
+*.md
