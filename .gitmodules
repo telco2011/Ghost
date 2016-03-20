@@ -1,9 +1,10 @@
-[submodule "casper"]
+[submodule "content/themes/casper"]
 	path = content/themes/casper
 	url = https://github.com/TryGhost/Casper.git
-[submodule "bleak"]
+[submodule "content/themes/bleak"]
 	path = content/themes/bleak
 	url = https://github.com/ShibamiAndMe/bleak.git
 [submodule "content/themes/Glimpse"]
 	path = content/themes/Glimpse
+[submodule "content/themes/Glimpse"]
 	url = https://github.com/ShibamiAndMe/Glimpse.git
