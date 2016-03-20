@@ -6,5 +6,4 @@
 	url = https://github.com/ShibamiAndMe/bleak.git
 [submodule "content/themes/Glimpse"]
 	path = content/themes/Glimpse
-[submodule "content/themes/Glimpse"]
 	url = https://github.com/ShibamiAndMe/Glimpse.git
