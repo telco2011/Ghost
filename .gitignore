@@ -46,6 +46,7 @@ Session.vim
 /content/tmp/*
 /content/data/*
 !/content/data/ghost-dev.db
+!/content/data/huellas.db
 /content/apps/**/*
 /content/images/**/*
 /content/themes/**/*
