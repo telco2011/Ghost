@@ -62,6 +62,7 @@ CHANGELOG.md
 /core/test/coverage
 
 /config.js
+/config.quetecomo.js
 
 # Built asset files
 /core/built
