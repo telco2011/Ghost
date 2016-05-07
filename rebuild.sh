@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Delete Ghost npm modules and builts..."
+echo "Delete Ghost npm modules and builds..."
 rm -rf ./node_modules ./core/built
 
 echo "Delete bleak theme extra modules..."
@@ -13,5 +13,5 @@ echo "Install Ghost dependencies..."
 cd ../../..
 npm install
 
-echo "Build Ghost builts..."
+echo "Build Ghost builds..."
 grunt init

@@ -19,7 +19,6 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "npm install semver && node -e \"require('./core/server/utils/startup-check.js').nodeVersion()\"",
-    "prestart": "cp ./config.quetecomo.js ./config.js",
     "start": "node index",
     "test": "grunt validate --verbose",
     "rebuild": "./rebuild.sh"
@@ -43,7 +42,6 @@
     "express-hbs": "0.8.4",
     "extract-zip": "1.4.1",
     "fs-extra": "^0.26.5",
-    "ghost-cloudinary-store": "^1.1.2",
     "ghost-gql": "0.0.4",
     "glob": "5.0.15",
     "html-to-text": "1.6.0",
