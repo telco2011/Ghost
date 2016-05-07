@@ -46,6 +46,7 @@ Session.vim
 /content/tmp/*
 /content/data/*
 !/content/data/ghost-dev.db
+!/content/data/huellas.db
 /content/apps/**/*
 /content/images/**/*
 /content/themes/**/*
@@ -61,6 +62,8 @@ CHANGELOG.md
 /core/test/coverage
 
 /config.js
+/config.quetecomo.js
+/config.huellas.js
 
 # Built asset files
 /core/built
